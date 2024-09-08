@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #1a1d23, #2f3640);
+    background-size: 100% 300px;
+    background-position: 0% 100%;
+    animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 100%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 100%;
+    }
+}
+
+.container{
+    width: 695px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.container:hover {
+    transform: scale(1.01);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.wrapper{
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background: #fff;
+    padding: 20px;
+}
+
+.wrapper .text-input{
+    display: flex;
+    border-bottom: 1px solid #ccc;
+}
+
+.text-input .to-text{
+    border-radius: 0px;
+    border: 1px solid #ccc;
+}
+
+.text-input textarea{
+    height: 255px;
+    width: 100%;
+    border: none;
+    outline: none;
+    resize: none;
+    font-size: 18px;
+    border-radius: 5px;
+    background: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.text-input textarea:focus {
+    background-color: #f2f2f2;
+}
+
+.controls, li, .icons, .icons i{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.controls{
+    list-style: none;
+    padding: 12px 15px;
+}
+
+.container .row.from .icons{
+    border-right: 1px solid #ccc;
+    padding-right: 15px;
+}
+
+.container .row.to .icons{
+    border-left: 1px solid #ddd;
+    padding-left: 15px;
+}
+
+.controls .icons{
+    width: 38%;
+}
+
+.controls .icons i{
+    width: 50px;
+    color: #666;
+    font-size: 14px;
+    cursor: pointer;
+    justify-content: center;
+    transition: color 0.3s ease-in-out;
+}
+
+.controls .icons i:hover {
+    color: #1a1d23;
+}
+
+.controls .row select{
+    border: none;
+    outline: none;
+    font-size: 18px;
+    background: none;
+}
+
+.controls .exchange{
+    color: #666;
+    font-size: 16px;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+.controls .exchange:hover {
+    color: #1a1d23;
+}
+
+.container button{
+    width: 100%;
+    padding: 14px;
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 17px;
+    border-radius: 5px;
+    background: #1a1d23;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.container button:hover{
+    background-color: #2f3640;
+}
+
+.credit-footer{
+    margin: auto;
+    text-align: center;
+    padding-top: 20px;
+}
